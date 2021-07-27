@@ -1,0 +1,67 @@
+# audo (updates dwm status bar also)
+alt + F10
+  ~/Documents/random/scripts/dwmstatusbar.sh mutevol &
+alt + F11
+  ~/Documents/random/scripts/dwmstatusbar.sh downvol & 
+alt + F12
+  ~/Documents/random/scripts/dwmstatusbar.sh upvol &
+
+# brightness
+alt + F8
+  xbacklight -dec 5
+alt + F9
+  xbacklight -inc 5
+
+# screesnhot
+shift + alt + s
+  flameshot gui
+
+# text-to-speech of selection
+shift + alt + t
+  xsel | festival --tts
+
+# music player
+shift + alt + m
+  st ~/Documents/random/scripts/mopidy.sh
+
+# vim
+alt + z
+  st -e vim ~/.zshrc
+alt + c
+  st -e calcurse
+alt + x
+  st -e vim ~/.config/sxhkd/sxhkdrc
+# missing two shortcuts I use
+
+# browser
+shift + alt + f
+  firefox
+ctrl + alt + f
+  firefox --private-window
+shift + alt + b
+  brave
+ctrl + alt + b
+  brave --incognito
+shift + alt + u
+  qutebrowser
+shift + alt + h
+  chromium
+ctrl + alt + h
+  chromium --incognito
+shift + alt + i
+  icecat
+ctrl + alt + i
+  icecat --private-window
+
+# monitor
+# missing two shortcuts I use
+
+# search
+shift + alt + g
+  st -e googler
+shift + alt + d
+  st -e ddgr
+
+# miscellaneous
+ctrl + alt + m
+  st -e w3m merriam-webster.com/dictionary/$(xsel) # definition of current selected text
